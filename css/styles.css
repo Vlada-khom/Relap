@@ -1,0 +1,29 @@
+.banner {
+  background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+  background-size: cover;
+}
+
+.header {
+  justify-content: space-between;
+}
+.header__logo {
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+}
+.header__menu a {
+  color: white;
+  text-decoration: none;
+  padding: 12px 23px;
+  margin-top: 16px;
+  font-weight: 600;
+}
+.header__contact {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  vertical-align: baseline;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=styles.css.map */
