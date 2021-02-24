@@ -1,6 +1,51 @@
+.facts {
+  background: #fdf2ff;
+}
+.facts__boxes {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.facts__box {
+  flex-basis: 279px;
+  padding: 0 15px;
+  margin: 40px 0;
+}
+@media (min-width: 992px) {
+  .facts__box {
+    margin: 102px 0 96px;
+  }
+}
+.facts__box h3 {
+  font-family: "Poppins";
+  font-weight: 700;
+  line-height: 2;
+}
+.facts__text {
+  font-family: "Source Sans Pro";
+  font-size: 16px;
+  color: rgba(51, 51, 51, 0.5);
+}
+.facts .icon-photo {
+  font-size: 42px;
+}
+.facts .icon-0 {
+  font-size: 42px;
+}
+.facts .icon-health {
+  font-size: 42px;
+}
+.facts .icon-cake {
+  font-size: 42px;
+}
+
+html {
+  font-size: 16px;
+}
+
 .banner {
-  background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+  background: url(../img/banner/rounds.png), linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
   background-size: cover;
+  position: relative;
 }
 
 .header {
@@ -12,18 +57,170 @@
   font-size: 40px;
   color: white;
 }
-.header__menu a {
+.header__logo:hover {
+  text-shadow: 2px 2px 2px #3f1a63;
+  color: fuchsia;
+}
+.header__features {
+  padding-right: 47px;
+  font-weight: 600;
+  font-family: "Source Sans Pro";
+  font-size: 16px;
   color: white;
   text-decoration: none;
-  padding: 12px 23px;
-  margin-top: 16px;
+}
+.header__features:hover {
+  text-shadow: 2px 2px 2px #3f1a63;
+  color: fuchsia;
+}
+.header__works {
+  padding-right: 47px;
   font-weight: 600;
+  font-family: "Source Sans Pro";
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
+.header__works:hover {
+  text-shadow: 2px 2px 2px #3f1a63;
+  color: fuchsia;
+}
+.header__about {
+  padding-right: 47px;
+  font-weight: 600;
+  font-family: "Source Sans Pro";
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
+.header__about:hover {
+  text-shadow: 2px 2px 2px #3f1a63;
+  color: fuchsia;
+}
+.header__search {
+  padding: 0 10px;
+  font-family: "Source Sans Pro";
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
+.header__search:hover {
+  color: #2ac8e4;
+}
+.header__blog {
+  font-weight: 600;
+  font-family: "Source Sans Pro";
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
+.header__blog:hover {
+  text-shadow: 2px 2px 2px #3f1a63;
+  color: fuchsia;
+}
+.header__burger {
+  color: white;
+  font-size: 36px;
+  text-shadow: 1px 1px 3px #0e0e0e;
+  line-height: 1.5;
+  border: 4px solid transparent;
+}
+.header__focus:focus {
+  box-shadow: none;
 }
 .header__contact {
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+  font-family: "Source Sans Pro";
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  border: 1px solid rgba(121, 106, 201, 0.8);
   border-radius: 20px;
   vertical-align: baseline;
   font-weight: 700;
+  padding-right: 47px;
+  padding-left: 47px;
+}
+.header__contact:hover {
+  text-shadow: 2px 2px 2px #3f1a63;
+  color: fuchsia;
+  border: 4px solid #796AC9;
+}
+
+.title {
+  margin-top: 200px;
+}
+.title__top {
+  font-family: "Poppins";
+  font-size: 16px;
+  color: white;
+  font-weight: 700;
+}
+.title__main {
+  font-family: "Poppins";
+  font-size: 72px;
+  color: white;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.btn-read {
+  padding: 12px 46px;
+  border-radius: 20px;
+  font-family: "Source Sans Pro";
+  font-size: 16px;
+  color: white;
+  font-weight: 700;
+  background: #FFC300;
+  margin: 36px 0;
+}
+.btn-read:hover {
+  color: white;
+  text-shadow: 0 0 2px black;
+  box-shadow: 0 0 7px #6a287e;
+}
+
+.box-banner {
+  margin-top: -150px;
+}
+@media (min-width: 992px) {
+  .box-banner {
+    margin-top: 0;
+  }
+}
+
+.arrow-right {
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  color: white;
+  text-align: center;
+  font-size: 19px;
+  line-height: 2.4;
+}
+.arrow-right:hover {
+  box-shadow: 0 0 5px white;
+}
+
+.arrow-left {
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  color: white;
+  text-align: center;
+  font-size: 19px;
+  line-height: 2.4;
+}
+.arrow-left:hover {
+  box-shadow: 0 0 5px white;
 }
 
 /*# sourceMappingURL=styles.css.map */

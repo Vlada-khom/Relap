@@ -1,0 +1,42 @@
+.facts {
+    background: rgba( 253, 242, 255, 1.0);
+    ;
+    &__boxes {
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        
+    }
+    &__box {
+        flex-basis: 279px;
+        padding: 0 15px;
+        margin: 40px 0 ;
+        @media(min-width: 992px) {
+            margin: 102px 0 96px;
+        }
+        h3 {
+            font-family: "Poppins";
+            font-weight: 700;
+            line-height: 2;
+        }
+    }
+    &__text {  
+        @include font("Source Sans Pro", 16, rgba(51, 51, 51, 0.5));
+
+    }
+    
+    .icon-photo {
+        font-size: 42px;
+
+    }
+    .icon-0 {
+        font-size: 42px;
+
+    }.icon-health {
+        font-size: 42px;
+
+    }.icon-cake {
+        font-size: 42px;
+
+    }
+}
