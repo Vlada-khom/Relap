@@ -38,7 +38,6 @@
             top: -30px;
             left: -30px;
         }
-        
     }
     &__text-main-r {
         @include font("Poppins", 40, white);
@@ -48,5 +47,4 @@
         @include font("Source Sans Pro", 16, rgba(255, 255, 255, 0.5));
         font-weight: 400;
     }
-    
 }
