@@ -6,8 +6,11 @@
         font-weight: 700;
     }
     &__text-main-l {
-        @include font("Poppins", 56, rgba(51, 51, 51, 1.0));
+        @include font("Poppins", 40, rgba(51, 51, 51, 1.0));
         font-weight: 700;
+        @media (min-width: 576px) {
+            font-size: 56px;
+        }
     }
     &__text-l {
         @include font("Source Sans Pro", 16, rgba(51, 51, 51, 1.0));
@@ -21,30 +24,54 @@
         color: white;
         padding: 12px 47px;
         margin-bottom: 60px;
+        &:hover {
+            background-color: rgba(200,109,215,1);
+            color: white;
+            text-shadow: 0 0 2px black;
+            box-shadow: 0 0 7px #3023AE;
+        }
     }
     &__box-r {
         background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
-        margin-left: 50px;
-        padding:  47px 47px 30px;
-        margin-right: auto;
+        margin-left: 30px;
+        margin-top: 30px;
+        justify-content: flex-end;
+        padding-bottom: 30px;
+        @media (min-width: 576px) {
+            margin-left: 50px;
+        }
+    }
+    &__block {
+        margin: 144px 0;
     }
     &__img-r {
         width: 315px;
-        height: 301px;
         position: relative;
-        top: -78px;
-        left: -78px;
+        top: -40px;
+        left: -50px;
         @media (min-width: 992px) {
-            top: -30px;
-            left: -30px;
+            width: 380px;
+            left: -65px;
+        }
+        @media (min-width: 1200px) {
+            width: 415px;
+            left: -40px;   
+        }
+        @media (min-width: 1400px) {
+            width: 470px;
         }
     }
     &__text-main-r {
         @include font("Poppins", 40, white);
         font-weight: 700;
+        margin-bottom: 10px;
+        @media (min-width: 992px) {
+            margin-top: 38px;
+        } 
     }
     &__text-r {
         @include font("Source Sans Pro", 16, rgba(255, 255, 255, 0.5));
         font-weight: 400;
+        padding-left: 8px;
     }
 }
