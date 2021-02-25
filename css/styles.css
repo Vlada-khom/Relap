@@ -125,6 +125,7 @@
 @media (min-width: 992px) {
   .about__text-main-r {
     margin-top: 38px;
+    padding-left: 10px;
   }
 }
 .about__text-r {
@@ -141,6 +142,7 @@
 }
 .explore__block {
   justify-content: space-between;
+  padding-top: 1px;
 }
 .explore__title-top {
   text-transform: uppercase;
@@ -155,18 +157,28 @@
 }
 .explore__boxes {
   flex-basis: 60%;
-  margin: 93px 0 121px;
+  margin: 93px 0 50px;
+}
+@media (min-width: 992px) {
+  .explore__boxes {
+    margin: 93px 0 121px;
+  }
 }
 .explore__btn {
   padding: 12px 58px;
   border-radius: 24px;
   color: white;
-  margin: 160px 0 176px;
+  margin-bottom: 100px;
 }
 .explore__btn:hover {
   color: white;
   text-shadow: 0 0 2px black;
   box-shadow: 0 0 7px white;
+}
+@media (min-width: 992px) {
+  .explore__btn {
+    margin: 160px 0 176px;
+  }
 }
 
 .circle {
@@ -188,11 +200,20 @@
   border-radius: 50%;
 }
 .circle_right {
-  width: 323px;
-  height: 162px;
-  border-radius: 50% 50% 0 0/100% 100% 0 0;
+  width: 170px;
+  height: 210px;
+  border-radius: 100% 0 0 0;
   bottom: 0;
-  right: 13%;
+  right: 0;
+}
+@media (min-width: 756px) {
+  .circle_right {
+    width: 355px;
+    height: 200px;
+    border-radius: 50% 50% 0 0/100% 100% 0 0;
+    bottom: 0;
+    right: 19%;
+  }
 }
 
 html {

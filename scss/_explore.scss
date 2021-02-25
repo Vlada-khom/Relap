@@ -3,6 +3,7 @@
     position: relative;
     &__block {
         justify-content: space-between;
+        padding-top: 1px;
     }
     &__title-top {
         text-transform: uppercase;
@@ -13,17 +14,23 @@
     }
     &__boxes {
         flex-basis: 60%;
-        margin: 93px 0 121px;
+        margin: 93px 0 50px;
+        @media (min-width: 992px) {
+            margin: 93px 0 121px;
+        }
     }
     &__btn {
         padding: 12px 58px;
         border-radius: 24px;
         color: white;
-        margin: 160px 0 176px;
+        margin-bottom: 100px;
         &:hover {
             color: white;
             text-shadow: 0 0 2px black;
             box-shadow: 0 0 7px rgb(255, 255, 255);
+        }
+        @media (min-width: 992px) {
+            margin: 160px 0 176px;
         }
     }
 }
@@ -45,10 +52,17 @@
         border-radius: 50%;
     }
     &_right {
-        width: 323px;
-        height: 162px;
-        border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+        width: 170px;
+        height: 210px;
+        border-radius: 100% 0 0 0;
         bottom: 0;
-        right: 13%;
+        right: 0;
+        @media (min-width: 756px) {
+            width: 355px;
+            height: 200px;
+            border-radius: 50% 50% 0 0/100% 100% 0 0;
+            bottom: 0;
+            right: 19%;
+        } 
     }
 }
