@@ -1,7 +1,18 @@
-.banner {
-    background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
-    background-size: cover;
+@import "_variables";
+@import "_facts";
+@import "_about";
+@import "_explore";
+
+html {
+    font-size: 16px;
 }
+
+.banner {
+    background: url(../img/banner/rounds.png), linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+    background-size: cover;
+    position: relative;
+}
+
 .header {
     justify-content: space-between;
     &__logo {
@@ -9,22 +20,141 @@
         font-weight: bold;
         font-size: 40px;
         color: white;
+        &:hover {
+            text-shadow: 2px 2px 2px rgb(63, 26, 99);
+            color: fuchsia;
+        }
     }
-    &__menu a {
-        color: white;
-        text-decoration: none;
-        padding: 12px 23px;
-        margin-top: 16px;
+    
+    &__features {
         font-weight: 600;
+        @include font("Source Sans Pro", 16, white);
+        text-decoration: none;
+        &:hover {
+            text-shadow: 2px 2px 2px rgb(63, 26, 99);
+            color: fuchsia;
+        } 
+    }
+    &__works {
+        font-weight: 600;
+        @include font("Source Sans Pro", 16, white);
+        text-decoration: none;
+        &:hover {
+            text-shadow: 2px 2px 2px rgb(63, 26, 99);
+            color: fuchsia;
+        }
+    }
+
+    &__about {
+        font-weight: 600;
+        @include font("Source Sans Pro", 16, white);
+        text-decoration: none;
+        &:hover {
+            text-shadow: 2px 2px 2px rgb(63, 26, 99);
+            color: fuchsia;
+        }
+    }
+
+    &__search {
+        padding: 0 10px;
+        @include font("Source Sans Pro", 24, white);
+        text-decoration: none;
+        &:hover {
+            color: rgb(42, 200, 228);
+        }
+    }
+    &__blog {
+        font-weight: 600;
+        @include font("Source Sans Pro", 16, white);
+        text-decoration: none;
+        &:hover {
+            text-shadow: 2px 2px 2px rgb(63, 26, 99);
+            color: fuchsia;
+        }
+    }
+    &__burger {
+        color: white;
+        font-size: 36px;
+        text-shadow: 1px 1px 3px #0e0e0e;
+        line-height: 1.5;
+        border: 4px solid transparent;
+    }
+    &__focus {
+        &:focus {
+           box-shadow: none; 
+        }
     }
     &__contact{
-        border: 1px solid rgba($color: white, $alpha: 0.8);
+        font-weight: 600;
+        @include font("Source Sans Pro", 16, white);
+        text-decoration: none;
+        border: 1px solid rgba($color:#796AC9, $alpha: 0.8);
         border-radius: 20px;
         vertical-align: baseline;
         font-weight: 700;
-        
-        
-        
-
+        padding-right: 47px;
+        padding-left: 47px;
+        &:hover {
+            text-shadow: 2px 2px 2px rgb(63, 26, 99);
+            color: fuchsia;
+            box-shadow: 0 0 4px 4px #796ac9;
+        }
+    }  
+}
+.title {
+    margin-top: 200px;
+    &__top {
+        @include font("Poppins", 16, white);
+        font-weight: 700; 
+    }
+    &__main {
+        @include font("Poppins", 72, white);
+        font-weight: 700;
+        line-height: 1;
+    }
+}
+.btn-read {
+    padding: 12px 46px;
+    border-radius: 20px;
+    @include font("Source Sans Pro", 16, white);
+    font-weight: 700;
+    background: #FFC300;
+    margin: 36px 0;
+    transition: .5s;
+    
+    &:hover {
+        color: white;
+        text-shadow: 0 0 2px black;
+        box-shadow: 0 0 7px rgb(106, 40, 126);
+    }
+}
+.box-banner {
+    margin-top: -150px;
+    @media (min-width: 992px) {
+        margin-top: 0;
+    }
+}
+.arrow {
+    width: 48px;
+    height: 48px;
+    border: 1px solid rgb(255 255 255 / 30%);
+    border-radius: 50%;
+    position: absolute;
+    top: 710px;
+    color: white;
+    text-align: center;
+    font-size: 19px;
+    line-height: 2.4;
+    &:hover {
+        box-shadow: 0 0 5px white;
+    }
+    @media (min-width: 992px) {
+        top: 240px;
+    }
+    &__right {
+        right: 0;  
+    }
+    &__left {
+        left: 0;
     }
 }
