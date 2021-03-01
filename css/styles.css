@@ -156,7 +156,7 @@
   color: white;
 }
 .explore__boxes {
-  flex-basis: 60%;
+  flex-basis: 50%;
   margin: 93px 0 50px;
 }
 @media (min-width: 992px) {
@@ -164,21 +164,25 @@
     margin: 93px 0 121px;
   }
 }
+.explore__box-btn {
+  display: flex;
+  align-items: center;
+  padding-bottom: 100px;
+}
+@media (min-width: 992px) {
+  .explore__box-btn {
+    padding: 160px 0 176px;
+  }
+}
 .explore__btn {
   padding: 12px 58px;
   border-radius: 24px;
   color: white;
-  margin-bottom: 100px;
 }
 .explore__btn:hover {
   color: white;
   text-shadow: 0 0 2px black;
   box-shadow: 0 0 7px white;
-}
-@media (min-width: 992px) {
-  .explore__btn {
-    margin: 160px 0 176px;
-  }
 }
 
 .circle {
@@ -209,7 +213,7 @@
 @media (min-width: 756px) {
   .circle_right {
     width: 355px;
-    height: 200px;
+    height: 190px;
     border-radius: 50% 50% 0 0/100% 100% 0 0;
     bottom: 0;
     right: 19%;
